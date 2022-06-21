@@ -28,10 +28,10 @@
           >
           <ul class="list nav-list">
             <li>
-              <a href="./index.html" class="site-nav">Студия</a>
+              <a href="./index.html" class="site-nav current">Студия</a>
             </li>
             <li>
-              <a href="./portfolio.html" class="site-nav current">Портфолио</a>
+              <a href="./portfolio.html" class="site-nav">Портфолио</a>
             </li>
             <li>
               <a href="" class="site-nav">Контакты</a>
@@ -41,12 +41,20 @@
 
         <ul class="list contact-list">
           <li>
-            <a href="mailto:mailto:info@devstudio.com" class="mail"
-              >info@devstudio.com</a
+            <a class="mail" href="mailto:mailto:info@devstudio.com">
+              <svg class="contact-icon" height="16" width="16">
+                <use href="images/symbol-defs.svg#mail"></use>
+              </svg>
+              <span>info@devstudio.com</span></a
             >
           </li>
           <li>
-            <a href="tel:+380961111111" class="telephone">+380961111111</a>
+            <a class="telephone" href="tel:+380961111111">
+              <svg class="contact-icon" height="16" width="16">
+                <use href="images/symbol-defs.svg#telephone"></use>
+              </svg>
+              <span>+380961111111</span></a
+            >
           </li>
         </ul>
       </div>
@@ -56,7 +64,7 @@
       <!-- Buttons bar -->
       <section class="section">
         <div class="container">
-          <h1 class="hidden">portfolio</h1>
+          <h1 class="visually-hidden">portfolio</h1>
           <ul class="list buttons-list">
             <li class="product-item">
               <button class="product-button" type="button">
@@ -229,34 +237,66 @@
       </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
-      <div class="container footer-list">
-        <a href="./index.html" class="logo-footer"
-          ><span class="logo-accent">Web</span>Studio</a
-        >
-        <address>
-          <ul class="list">
-            <li class="footer-item">
-              <a
-                href="https://bit.ly/3pXMvUd"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="address-footer"
-                >г. Киев, пр-т Леси Украинки, 26</a
-              >
+      <div class="container footer-block">
+        <div>
+          <a href="./index.html" class="logo-footer"
+            ><span class="logo-accent">Web</span>Studio</a
+          >
+          <address>
+            <ul class="list">
+              <li class="footer-item">
+                <a
+                  class="address-footer"
+                  href="https://bit.ly/3pXMvUd"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="footer-item">
+                <a class="link-footer" href="mailto:info@devstudio.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="footer-item">
+                <a class="link-footer" href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-connect">
+          <h2 class="footer-connect-text">ПРИСОЕДИНЯЙТЕСЬ</h2>
+          <ul class="list social-footer">
+            <li class="social-item">
+              <a class="social-link-footer" href=""
+                ><svg class="footer-icon">
+                  <use href="images/symbol-defs.svg#instagram"></use></svg
+              ></a>
             </li>
-            <li class="footer-item">
-              <a class="link-footer" href="mailto:info@devstudio.com"
-                >info@example.com</a
-              >
+            <li class="social-item">
+              <a class="social-link-footer" href=""
+                ><svg class="footer-icon">
+                  <use href="images/symbol-defs.svg#twitter"></use></svg
+              ></a>
             </li>
-            <li class="footer-item">
-              <a class="link-footer" href="tel:+380991111111"
-                >+38 099 111 11 11</a
-              >
+            <li class="social-item">
+              <a class="social-link-footer" href=""
+                ><svg class="footer-icon">
+                  <use href="images/symbol-defs.svg#facebook"></use></svg
+              ></a>
+            </li>
+            <li class="social-item">
+              <a class="social-link-footer" href=""
+                ><svg class="footer-icon">
+                  <use href="images/symbol-defs.svg#linkedin-1"></use></svg
+              ></a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
