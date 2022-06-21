@@ -41,12 +41,20 @@
 
         <ul class="list contact-list">
           <li>
-            <a href="mailto:mailto:info@devstudio.com" class="mail"
-              >info@devstudio.com</a
+            <a class="mail" href="mailto:mailto:info@devstudio.com">
+              <svg class="contact-icon" height="16" width="16">
+                <use href="images/symbol-defs.svg#mail"></use>
+              </svg>
+              <span>info@devstudio.com</span></a
             >
           </li>
           <li>
-            <a href="tel:+380961111111" class="telephone">+380961111111</a>
+            <a class="telephone" href="tel:+380961111111">
+              <svg class="contact-icon" height="16" width="16">
+                <use href="images/symbol-defs.svg#telephone"></use>
+              </svg>
+              <span>+380961111111</span></a
+            >
           </li>
         </ul>
       </div>
@@ -67,38 +75,46 @@
       <!-- benefits list -->
       <section class="benefits section">
         <div class="container">
-          <h2 class="hidden">Benefits list</h2>
+          <h2 class="visually-hidden">Benefits list</h2>
           <ul class="list benefit-list">
-            <li class="benefit-card">
-              <h3 class="benefit-title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
-              <p class="benefit-description">
-                Идейные соображения, а также начало повседневной работы по
-                формированию позиции.
-              </p>
+            <li class="benefit-card benefit-card-icon benefit-antenna">
+              <div class="benefit-container">
+                <h3 class="benefit-title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
+                <p class="benefit-description">
+                  Идейные соображения, а также начало повседневной работы по
+                  формированию позиции.
+                </p>
+              </div>
             </li>
 
-            <li class="benefit-card">
-              <h3 class="benefit-title">ПУНКТУАЛЬНОСТЬ</h3>
-              <p class="benefit-description">
-                Задача организации, в особенности же рамки и место обучения
-                кадров влечет за собой.
-              </p>
+            <li class="benefit-card benefit-card-icon benefit-clock">
+              <div class="benefit-container">
+                <h3 class="benefit-title">ПУНКТУАЛЬНОСТЬ</h3>
+                <p class="benefit-description">
+                  Задача организации, в особенности же рамки и место обучения
+                  кадров влечет за собой.
+                </p>
+              </div>
             </li>
 
-            <li class="benefit-card">
-              <h3 class="benefit-title">ПЛАНИРОВАНИЕ</h3>
-              <p class="benefit-description">
-                Равным образом консультация с широким активом в значительной
-                степени обуславливает.
-              </p>
+            <li class="benefit-card benefit-card-icon benefit-diagram">
+              <div class="benefit-container">
+                <h3 class="benefit-title">ПЛАНИРОВАНИЕ</h3>
+                <p class="benefit-description">
+                  Равным образом консультация с широким активом в значительной
+                  степени обуславливает.
+                </p>
+              </div>
             </li>
 
-            <li class="benefit-card">
-              <h3 class="benefit-title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
-              <p class="benefit-description">
-                Значимость этих проблем настолько очевидна, что реализация
-                плановых заданий.
-              </p>
+            <li class="benefit-card benefit-card-icon benefit-astronaut">
+              <div class="benefit-container">
+                <h3 class="benefit-title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
+                <p class="benefit-description">
+                  Значимость этих проблем настолько очевидна, что реализация
+                  плановых заданий.
+                </p>
+              </div>
             </li>
           </ul>
         </div>
@@ -155,6 +171,32 @@
               />
               <h3 class="team-name">Игорь Демьяненко</h3>
               <p class="work-role">Product Designer</p>
+              <ul class="list social">
+                <li class="social-item">
+                  <a class="social-link" href=""
+                    ><svg class="team-icon">
+                      <use href="images/symbol-defs.svg#instagram"></use></svg
+                  ></a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href=""
+                    ><svg class="team-icon">
+                      <use href="images/symbol-defs.svg#twitter"></use></svg
+                  ></a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href=""
+                    ><svg class="team-icon">
+                      <use href="images/symbol-defs.svg#facebook"></use></svg
+                  ></a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href=""
+                    ><svg class="team-icon">
+                      <use href="images/symbol-defs.svg#linkedin-1"></use></svg
+                  ></a>
+                </li>
+              </ul>
             </li>
             <li class="team-card">
               <img
@@ -166,6 +208,32 @@
               />
               <h3 class="team-name">Ольга Репина</h3>
               <p class="work-role">Frontend Developer</p>
+              <ul class="list social">
+                <li class="social-item">
+                  <a class="social-link" href=""
+                    ><svg class="team-icon">
+                      <use href="images/symbol-defs.svg#instagram"></use></svg
+                  ></a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href=""
+                    ><svg class="team-icon">
+                      <use href="images/symbol-defs.svg#twitter"></use></svg
+                  ></a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href=""
+                    ><svg class="team-icon">
+                      <use href="images/symbol-defs.svg#facebook"></use></svg
+                  ></a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href=""
+                    ><svg class="team-icon">
+                      <use href="images/symbol-defs.svg#linkedin-1"></use></svg
+                  ></a>
+                </li>
+              </ul>
             </li>
             <li class="team-card">
               <img
@@ -177,6 +245,32 @@
               />
               <h3 class="team-name">Николай Тарасов</h3>
               <p class="work-role">Marketing</p>
+              <ul class="list social">
+                <li class="social-item">
+                  <a class="social-link" href=""
+                    ><svg class="team-icon">
+                      <use href="images/symbol-defs.svg#instagram"></use></svg
+                  ></a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href=""
+                    ><svg class="team-icon">
+                      <use href="images/symbol-defs.svg#twitter"></use></svg
+                  ></a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href=""
+                    ><svg class="team-icon">
+                      <use href="images/symbol-defs.svg#facebook"></use></svg
+                  ></a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href=""
+                    ><svg class="team-icon">
+                      <use href="images/symbol-defs.svg#linkedin-1"></use></svg
+                  ></a>
+                </li>
+              </ul>
             </li>
             <li class="team-card">
               <img
@@ -188,25 +282,51 @@
               />
               <h3 class="team-name">Михаил Ермаков</h3>
               <p class="work-role">UI Designer</p>
+              <ul class="list social">
+                <li class="social-item">
+                  <a class="social-link" href=""
+                    ><svg class="team-icon">
+                      <use href="images/symbol-defs.svg#instagram"></use></svg
+                  ></a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href=""
+                    ><svg class="team-icon">
+                      <use href="images/symbol-defs.svg#twitter"></use></svg
+                  ></a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href=""
+                    ><svg class="team-icon">
+                      <use href="images/symbol-defs.svg#facebook"></use></svg
+                  ></a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href=""
+                    ><svg class="team-icon">
+                      <use href="images/symbol-defs.svg#linkedin-1"></use></svg
+                  ></a>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
       </section>
 
-      <!-- <section class="section">
+      <section class="section">
         <div class="container">
-          <h2>Постоянные клиенты</h2>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+          <h2 class="clients-title">Постоянные клиенты</h2>
+          <ul class="list clients-list">
+            <li class="client"></li>
+            <li class="client"></li>
+            <li class="client"></li>
+            <li class="client"></li>
+            <li class="client"></li>
+            <li class="client"></li>
           </ul>
         </div>
       </section>
-    </main> -->
+    </main>
 
     <!-- Footer -->
     <footer class="footer">

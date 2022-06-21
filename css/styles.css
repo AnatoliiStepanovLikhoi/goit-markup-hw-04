@@ -30,11 +30,11 @@ body {
 }
 
 /* приховані заголовки */
-.hidden{
+/* .hidden{
     display: none;
-}
+} */
 
-/* .visually-hidden {
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -43,7 +43,7 @@ body {
     overflow: hidden;
     border: 0;
     clip: rect(0 0 0 0);
-} */
+}
 
 
 /* прибрані відсупи тексту та заголовків */
@@ -146,6 +146,12 @@ p{
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    display: flex;    
+}
+
+.contact-icon{
+    fill: var(--description-text-color);
+    margin-right: 10px;
 }
 
 .mail:hover,
@@ -153,13 +159,17 @@ p{
 .telephone:hover,
 .telephone:focus,
 .link-footer:hover,
-.link-footer:focus{
+.link-footer:focus,
+.contact-icon:hover,
+.contact-icon:focus{
+    fill: var(--accent-text-color);
     color:var(--accent-text-color);
 }
 
 /* order section */
 
 .order-window{
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/hero-image.jpg);
     background-color: #2F303A;
 }
 
@@ -209,9 +219,55 @@ p{
 
 /* benefits list */
 
-.benefits-container{
-    margin: 0 auto;
+/* .benefit-container{
+    margin-top: 30px;
+} */
+
+.benefit-card-icon::before {
+    display: block;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    content: "";
+    
 }
+.benefit-antenna::before{
+    content: "";
+    background-image: url(../images/antenna-1.svg);
+    background-size: 70px;
+}
+
+.benefit-clock::before {
+    content: "";
+    background-image: url(../images/clock-1.svg);
+    background-size: 70px;
+}
+
+.benefit-diagram::before {
+    content: "";
+    background-image: url(../images/diagram-1.svg);
+    background-size: 70px;
+}
+
+.benefit-astronaut::before {
+    content: "";
+    background-image: url(../images/astronaut-1.svg);
+    background-size: 70px;
+}
+
+/* .benefit-container::before{
+        content: "";
+        display: block;
+        height: 120px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #F5F4FA;
+        border-radius: 4px;
+        margin-bottom: 30px;
+} */
 
 .benefit-list{
     display: flex;
@@ -319,9 +375,69 @@ p{
         line-height: 1.19;
         text-align: center;
         color: var(--description-text-color);
-        margin-bottom: 30px;
-        
+        margin-bottom: 16px;
     }
+
+.social{
+    display: flex;
+    max-width: 206px;
+    height: 44px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    color: #FFFFFF;
+}
+
+.social-item + .social-item{
+    margin-left: 10px;
+}
+
+.team-icon{
+    /* fill: currentColor; */
+    width: 20px;
+    height: 20px;
+}
+
+.social-link:hover,
+.social-link:focus {
+    background-color: var(--accent-text-color);
+    color: #FFFFFF);
+}
+
+/* Our clients */
+
+.clients-title{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 50px;
+}
+.clients-list{
+        display: flex;
+        }
+.client{
+    flex-basis: calc((100% - 150px) / 6);
+    max-width: 170px;
+    height: 92px;
+    outline: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.clients-list> .client + .client{
+    margin-left: 50px;
+}
+
 
 /* portfolio main */
 
